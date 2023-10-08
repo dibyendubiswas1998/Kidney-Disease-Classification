@@ -1,3 +1,10 @@
+# word files
+documents/word files
+
+# secrect file:
+config/secrect.yaml
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
