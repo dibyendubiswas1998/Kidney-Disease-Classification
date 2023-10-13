@@ -4,6 +4,10 @@ documents/word files
 # secrect file:
 config/secrect.yaml
 
+# artifacts:
+artifacts/data/*
+
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

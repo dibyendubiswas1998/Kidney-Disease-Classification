@@ -1,0 +1,10 @@
+artifacts:
+  root_dir: artifacts
+  data:
+    data_dir: artifacts/data
+    normal_dir: artifacts/data/normal
+    tumor_dir: artifacts/data/tumor
+
+logs:
+  log_dir: logs
+  log_file: logs/running_logs.log
