@@ -18,6 +18,8 @@ list_of_files = [
     "artifacts/model/.gitkeep", # model directory
     "artifacts/report/performace_report.json", # artifacts/report directory for performance report
     
+
+    "logs/running_logs.txt", # logs file
     
     f"src/{template_name}/__init__.py", # cnnClassifier package
 
