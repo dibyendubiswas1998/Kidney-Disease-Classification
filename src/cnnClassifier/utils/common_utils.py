@@ -37,7 +37,7 @@ def read_params(config_path: Path) -> ConfigBox:
 
 
 @ensure_annotations
-def clean_prev_dirs_if_exis(dir_path: str) -> None:
+def clean_prev_dirs_if_exis(dir_path: str):
     """
         Clean up a directory by removing it if it exists.
 
@@ -58,7 +58,7 @@ def clean_prev_dirs_if_exis(dir_path: str) -> None:
 
 
 @ensure_annotations
-def create_dir(dirs: list) -> None:
+def create_dir(dirs: list):
     """
         Create directories specified in a list.
 
@@ -79,7 +79,7 @@ def create_dir(dirs: list) -> None:
 
 
 @ensure_annotations
-def save_report(file_path: Path, report: dict) -> None:
+def save_report(file_path: Path, report: dict):
     """
         Saves the report dictionary to a file in JSON format.
 
@@ -128,7 +128,7 @@ def load_report(file_path:Path) -> ConfigBox:
 
 
 @ensure_annotations
-def save_binary_file(data: Any, file_path: Path) -> None:
+def save_binary_file(data: Any, file_path: Path):
     """
         Save binary file.
 
@@ -189,7 +189,7 @@ def get_size(file_path: Path) -> str:
     """
     try:
         size_in_kb = round(os.path.getsize(file_path)/1024)
-        return "~ {size_in_kb} KB".format(size_in_kb)
+        return f"{size_in_kb} KB"
 
     except Exception as ex:
         raise ex
