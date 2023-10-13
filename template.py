@@ -19,7 +19,7 @@ list_of_files = [
     "artifacts/report/performace_report.json", # artifacts/report directory for performance report
     
 
-    "logs/running_logs.txt", # logs file
+    "logs/running_logs.log", # logs file
     
     f"src/{template_name}/__init__.py", # cnnClassifier package
 
