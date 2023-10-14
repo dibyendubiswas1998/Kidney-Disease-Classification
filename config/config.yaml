@@ -8,3 +8,9 @@ artifacts:
 logs:
   log_dir: logs
   log_file: logs/running_logs.log
+
+
+prepare_base_model:
+  model_dir: artifacts/model
+  base_model_path: artifacts/model/base_model.h5
+  updated_base_model_path: artifacts/model/base_model_updated.h5

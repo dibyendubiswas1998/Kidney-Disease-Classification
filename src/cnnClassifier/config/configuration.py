@@ -44,7 +44,26 @@ class ConfigManager:
             raise ex
 
 
+    def prepare_base_model_config(self) -> PrepareBaseModelConfig:
+        try:
+            prepare_base_model_config = PrepareBaseModelConfig(
+                log_file = self.config.logs.log_file,
+                model_dir =self.config.prepare_base_model.model_dir,
+                base_model_path = self.config.prepare_base_model.base_model_path,
+                updated_base_model_path =self.config.prepare_base_model.updated_base_model_path,
+                params_image_size = self.params.model_params.IMAGE_SIZE,
+                params_include_top = self.params.model_params.INCLUDE_TOP,
+                params_weights = self.params.model_params.WEIGHTS,
+                params_leraning_rate = self.params.model_params.LEARNING_RATE,
+                params_classes = self.params.model_params.CLASSES,
+            )
+            return prepare_base_model_config
+
+        except Exception as ex:
+                raise ex
+
+
 if __name__ == '__main__':
     cf = ConfigManager()
-    print(cf.get_log_file_config())
+    print(cf.prepare_base_model_config())
     

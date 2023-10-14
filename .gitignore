@@ -6,7 +6,7 @@ config/secrect.yaml
 
 # artifacts:
 artifacts/data/*
-
+artifacts/model/*
 
 
 # Byte-compiled / optimized / DLL files
