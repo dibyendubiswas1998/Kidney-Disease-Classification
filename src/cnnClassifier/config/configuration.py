@@ -61,9 +61,27 @@ class ConfigManager:
 
         except Exception as ex:
                 raise ex
+    
+
+    def get_model_training_config(self) -> ModelTrainingConfig:
+        try:
+            model_training_config = ModelTrainingConfig(
+                log_file = self.config.logs.log_file,
+                updated_base_model_path = self.config.prepare_base_model.updated_base_model_path,
+                training_model_path = self.config.training.trained_model_path,
+                training_data = self.config.artifacts.data.data_dir,
+                params_epochs = self.params.model_params.EPOCHS,
+                params_batch_size = self.params.model_params.BATCH_SIZE,
+                params_is_augmentation = self.params.model_params.AUGMENTATION,
+                params_image_size = self.params.model_params.IMAGE_SIZE,
+            )
+            return model_training_config
+
+        except Exception as ex:
+            raise ex
 
 
 if __name__ == '__main__':
     cf = ConfigManager()
-    print(cf.prepare_base_model_config())
+    print(cf.get_model_training_config())
     
