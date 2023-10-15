@@ -4,6 +4,11 @@ artifacts:
     data_dir: artifacts/data
     normal_dir: artifacts/data/normal
     tumor_dir: artifacts/data/tumor
+  
+  model_performance_report:
+    root_dir: artifacts/report
+    file_path: artifacts/report/performace_report.json
+
 
 logs:
   log_dir: logs

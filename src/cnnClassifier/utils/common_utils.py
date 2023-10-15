@@ -94,7 +94,7 @@ def save_report(file_path: Path, report: dict):
             save_report('report.json', {'name': 'John', 'age': 25})
     """
     try:
-        with open(file_path, 'a+') as f:
+        with open(file_path, 'w') as f:
             json.dump(report, f, indent=4)
     except Exception as e:
         raise e

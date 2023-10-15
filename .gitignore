@@ -8,6 +8,12 @@ config/secrect.yaml
 artifacts/data/*
 artifacts/model/*
 
+# mlruns:
+mlruns/*
+https/*
+
+# script:
+script.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

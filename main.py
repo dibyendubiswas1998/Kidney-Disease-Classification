@@ -3,6 +3,7 @@ from src.cnnClassifier.utils.logging import log
 from src.cnnClassifier.pipeline.data_ingestion import DataIntegrationTrainingPipeline
 from src.cnnClassifier.pipeline.prepare_base_model import PrepareBaseModelTrainingPipeline
 from src.cnnClassifier.pipeline.model_training import ModelTrainingPipeline
+from src.cnnClassifier.pipeline.model_evaluation import ModelEvaluationTrainingPipeline
 
 
 config_manager = ConfigManager() # ConfigManager
@@ -42,6 +43,19 @@ STAGE_NAME = "Model Training Stage"
 try:
     log(file_object=log_file, log_message=f"{str('>')*15} Stage: {STAGE_NAME} started {str('<')*15}")
     obj = ModelTrainingPipeline()
+    obj.main()
+    log(file_object=log_file, log_message=f"{str('>')*15} Stage: {STAGE_NAME} completed {str('<')*15} \n\n")
+     
+except Exception as ex:
+    log(file_object=log_file, log_message=f"error {ex}")
+
+
+
+
+STAGE_NAME = "Model Evaluation Stage"
+try:
+    log(file_object=log_file, log_message=f"{str('>')*15} Stage: {STAGE_NAME} started {str('<')*15}")
+    obj = ModelEvaluationTrainingPipeline()
     obj.main()
     log(file_object=log_file, log_message=f"{str('>')*15} Stage: {STAGE_NAME} completed {str('<')*15} \n\n")
      

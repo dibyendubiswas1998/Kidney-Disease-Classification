@@ -81,6 +81,24 @@ class ConfigManager:
             raise ex
 
 
+    def get_data_evalusation_config(self) -> ModelEvaluationConfig:
+        try:
+            eval_config = ModelEvaluationConfig(
+                log_file = self.config.logs.log_file,
+                model_path = self.config.training.trained_model_path,
+                training_data = self.config.artifacts.data.data_dir,
+                all_params = self.params.model_params,
+                mlflow_uri = self.secrect.mlflow.MLFLOW_TRACKING_URI,
+                params_image_size = self.params.model_params.IMAGE_SIZE,
+                params_batch_size = self.params.model_params.BATCH_SIZE,
+                model_performance_report_file_path = self.config.artifacts.model_performance_report.file_path,
+            )
+            return eval_config
+
+        except Exception as ex:
+            raise ex
+
+
 if __name__ == '__main__':
     cf = ConfigManager()
     print(cf.get_model_training_config())
