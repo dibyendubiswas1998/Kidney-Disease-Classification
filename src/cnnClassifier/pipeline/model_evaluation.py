@@ -23,7 +23,7 @@ class ModelEvaluationTrainingPipeline:
             
             eval_obj = ModelEvaluation(config=get_data_evalusation_config)
             eval_obj.evaluation()
-            eval_obj.log_into_mlflow()
+            # eval_obj.log_into_mlflow()
 
         except Exception as ex:
             raise ex
