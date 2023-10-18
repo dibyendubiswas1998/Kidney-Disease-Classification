@@ -8,7 +8,7 @@ Develop an intelligent Kidney Disease Classification system using deep learning 
 ## Solution:
 The seamless integration of the Kidney Disease Classification system through a robust CI/CD pipeline using GitHub Actions marks a significant milestone in healthcare technology. This automated deployment ensures that the latest advancements in kidney abnormality identification are promptly and efficiently delivered to healthcare professionals. By enabling swift iterations, seamless deployment, and continuous improvements, this automated workflow elevates the precision of kidney disease diagnosis.
 <br><br>
-With this CI/CD pipeline, healthcare professionals are empowered with a reliable and continually updated tool, enhancing their ability to identify kidney abnormalities with speed and accuracy. Through early diagnosis and timely intervention facilitated by this application, patient outcomes are substantially improved. This not only positively impacts individual lives but also contributes to the overall efficiency of kidney disease diagnosis and treatment, shaping a future where healthcare technology plays a pivotal role in enhancing patient care. [User APP](34.204.101.91:8080)
+With this CI/CD pipeline, healthcare professionals are empowered with a reliable and continually updated tool, enhancing their ability to identify kidney abnormalities with speed and accuracy. Through early diagnosis and timely intervention facilitated by this application, patient outcomes are substantially improved. This not only positively impacts individual lives but also contributes to the overall efficiency of kidney disease diagnosis and treatment, shaping a future where healthcare technology plays a pivotal role in enhancing patient care.
 
 
 ## Project Workflow:
@@ -58,7 +58,7 @@ With this CI/CD pipeline, healthcare professionals are empowered with a reliable
     * ntegrate the trained model into the application.
     * Implement the prediction mechanism.
     * Display the prediction results along with confidence scores.
-    * [User APP](34.204.101.91:8080)
+    
 
 
 
